@@ -28,11 +28,13 @@ export default function Home() {
   }, [locale]);
 
   if (loading) {
-    return;
+    return (
+      <div className="text-center py-8 text-lg text-gray-600">Loading...</div>
+    );
   }
 
   if (!content) {
-    return;
+    return <div>Error loading content</div>;
   }
 
   return (

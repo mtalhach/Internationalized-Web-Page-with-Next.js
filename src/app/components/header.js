@@ -31,11 +31,11 @@ export default function Header() {
   }, [locale]);
 
   if (loading) {
-    return null; // Optionally add a loading spinner here
+    return <div>Loading footer...</div>;
   }
 
   if (!navigationContent) {
-    return null; // Optionally add an error message here
+    return <div>Error loading footer content</div>;
   }
 
   return (

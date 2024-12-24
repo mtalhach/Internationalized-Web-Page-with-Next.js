@@ -28,11 +28,11 @@ export default function Footer() {
   }, [locale]);
 
   if (loading) {
-    return;
+    return <div>Loading footer...</div>;
   }
 
   if (!content) {
-    return;
+    return <div>Error loading footer content</div>;
   }
 
   return (
